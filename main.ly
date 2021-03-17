@@ -71,11 +71,6 @@
         \First_Movement_Score_Horn_Part
     }
 
-    % % bassoon
-    % \bookpart {
-    %     \header {
-    %         instrument = #(instrument-name 'bassoon 'full)
-    %     }
-    %     \First_Movement_Score_Bassoon_Part
-    % }
 }
+
+\First_Movement_Score_MIDI_Score

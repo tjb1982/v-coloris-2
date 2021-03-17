@@ -31,8 +31,10 @@ Common_Part =
         (music)
         (ly:music?)
         #{
-            \removeWithTag #'score {
+            \removeWithTag #'score
+            {
                 \override Staff.Hairpin.to-barline = ##f
+                \compressMMRests
                 $music
             }
         #})

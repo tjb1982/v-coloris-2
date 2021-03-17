@@ -35,11 +35,6 @@ First_Movement_Score_Transposing_Score = \score {
 First_Movement_Score_Sounding_Score = \score {
     \first_movement_score_header
     \first_movement_score_layout
-    \midi {
-        \set Staff.midiInstrument = "synthbrass 2"
-        \set Staff.midiInstrument = "electric piano 1"
-        % \set Staff.midiInstrument = "acoustic grand"
-    }
 
     \new StaffGroup <<
         \First_Movement_Flute_Staff
@@ -50,6 +45,26 @@ First_Movement_Score_Sounding_Score = \score {
     >>
 }
 
+First_Movement_Score_MIDI_Score = \score {
+    \first_movement_score_header
+    \first_movement_score_layout
+    \midi {
+        % \set Staff.midiInstrument = "synthbrass 2"
+        \set Staff.midiInstrument = "electric piano 1"
+        % \set Staff.midiInstrument = "electric piano 2"
+        % \set Staff.midiInstrument = "acoustic grand"
+        % \set Staff.midiInstrument = "synthstrings 2"
+    }
+    \unfoldRepeats
+
+    \new StaffGroup <<
+        \First_Movement_Flute_Staff
+        \First_Movement_Oboe_Staff
+        \First_Movement_Clarinet_Staff
+        \First_Movement_Bassoon_Staff
+        \First_Movement_Horn_Staff
+    >>
+}
 
 First_Movement_Score_Flute_Part = \score {
     \first_movement_score_header
