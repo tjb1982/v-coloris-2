@@ -29,7 +29,7 @@ music = \relative c' {
     | r8 r8 \noniente 8 | 4. \espressivo ~ | 8 r8 \! r8
     | R4. * 4
 
-    | r8 bes,!^\hauptStart \< ( a-. ) | \acciaccatura a g ( e ) c-- | f!-- \mf bes!-- a-. | g-. f!-. e-. | d-- \< d, ( e | a d g ) | g4 \f c,8-> ( | b'4. ~
+    | r8 bes,!^\hauptStart \< ( a-. ) | \acciaccatura a g ( e ) c-- | f!-- \mf bes!-- a-. | g-. f!-. e-. | d-- d, \< ( e | a d g ) | g4 \f c,8-> ( | b'4. ~
     | 4. \espressivo ~ | 4. ) | b,4. \rfz \> ~ | 4. ~ | 8.^\stimmeEnd r8. \!
     
     % | r8 a,^\hauptStart \mp ( g ) | \acciaccatura { a } g ( fis ) b | c a g | fis ( g ) d ( | e ) a g | \acciaccatura g f! ( \< e ) b' ( | c ) bes! a

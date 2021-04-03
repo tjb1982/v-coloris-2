@@ -33,7 +33,9 @@ phrase_one = \relative c'' {
         \override TextSpanner.bound-details.left.text = \markup {
             \whiteout \normal-text "fully stopped"
         }
-        \noniente g4.^\hauptStart \pp \< \startTextSpan ~ | 4. \mf \> ~ | 4. ~ | 8 \p r8 g16-. \mp g-. | g8-. f!8-. a-. | g4.-- \> ~ | 8.^\stimmeEnd \stopTextSpan r8. \!
+        \noniente g4.^\hauptStart \fp \< \startTextSpan ~ | 4. \mf \> ~ | 4. ~
+            | 8 \p \stopTextSpan r8 g16-. ^\markup \whiteout open \mp g-. | g8-. f!8-. a-.
+            | g4.-- \> ~ | 8.^\stimmeEnd r8. \!
     | R4.
     % | r8 bes!^\hauptStart ^"(open)" \< a | g e c | f! \mf bes! a | g f! e | d \< d, e | a d g | g c, b' ~
     % | 4. \f \espressivo ~ | 4. | b,4. \rfz \> ~ | 4. ~ | 8.^\stimmeEnd r8. \!
