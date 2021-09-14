@@ -6,11 +6,11 @@
 \include "bassoon.ly"
 
 
-first_movement_score_layout = \layout {
-    indent = \Common_Main_Indent
-    short-indent = \Common_Short_Indent
-    \numericTimeSignature
-}
+% first_movement_score_layout = \layout {
+%     indent = \Common_Main_Indent
+%     short-indent = \Common_Short_Indent
+%     \numericTimeSignature
+% }
 
 first_movement_score_header = \header {
     title = "I."
@@ -21,7 +21,6 @@ first_movement_score_header = \header {
 
 First_Movement_Score_Transposing_Score = \score {
     \first_movement_score_header
-    \first_movement_score_layout
 
     \new StaffGroup <<
         \First_Movement_Flute_Staff
@@ -34,28 +33,6 @@ First_Movement_Score_Transposing_Score = \score {
 
 First_Movement_Score_Sounding_Score = \score {
     \first_movement_score_header
-    \first_movement_score_layout
-
-    \new StaffGroup <<
-        \First_Movement_Flute_Staff
-        \First_Movement_Oboe_Staff
-        \First_Movement_Clarinet_Staff
-        \First_Movement_Bassoon_Staff
-        \First_Movement_Horn_Staff
-    >>
-}
-
-First_Movement_Score_MIDI_Score = \score {
-    \first_movement_score_header
-    \first_movement_score_layout
-    \midi {
-        % \set Staff.midiInstrument = "synthbrass 2"
-        \set Staff.midiInstrument = "electric piano 1"
-        % \set Staff.midiInstrument = "electric piano 2"
-        % \set Staff.midiInstrument = "acoustic grand"
-        % \set Staff.midiInstrument = "synthstrings 2"
-    }
-    \unfoldRepeats
 
     \new StaffGroup <<
         \First_Movement_Flute_Staff
@@ -85,4 +62,27 @@ First_Movement_Score_Bassoon_Part = \score {
 First_Movement_Score_Horn_Part = \score {
     \first_movement_score_header
     \First_Movement_Horn_Part
+}
+
+
+First_Movement_Score_MIDI_Score = \score {
+    \first_movement_score_header
+    \midi {
+        % \set Staff.midiInstrument = "synthbrass 2"
+        \set Staff.midiInstrument = "electric piano 1"
+        % \set Staff.midiInstrument = "electric piano 2"
+        % \set Staff.midiInstrument = "acoustic grand"
+        % \set Staff.midiInstrument = "synthstrings 2"
+        % \set Staff.midiInstrument = "synthbrass 2"
+    }
+    \unfoldRepeats
+
+    \new StaffGroup <<
+        \First_Movement_Flute_Staff
+        \First_Movement_Oboe_Staff
+        % \First_Movement_Clarinet_Staff
+        \First_Movement_Clarinet_MIDI
+        \First_Movement_Bassoon_Staff
+        \First_Movement_Horn_Staff
+    >>
 }
